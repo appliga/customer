@@ -1,0 +1,25 @@
+{
+    "name":         "appliga/customer",
+    "description":  "",
+    "keywords":     ["Customer"],
+    "homepage":     "https://github.com/appliga/customer",
+    "type":         "library",
+    "license":      "MIT",
+    "authors":      [
+        {
+            "name":      "Pawel Brzoski",
+            "email":     "brzoski.pawel@gmail.com"
+        }
+    ],
+
+
+    "require-dev": {
+        "phpspec/phpspec": "^2.5"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Appliga\\Customer\\": "src/"
+        }
+    }
+}

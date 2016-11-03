@@ -1,0 +1,4 @@
+suites:
+    appliga_customer_suite:
+        namespace: Appliga\Customer
+        psr4_prefix: Appliga\Customer
