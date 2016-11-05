@@ -1,13 +1,13 @@
 <?php
 
-namespace spec\Appliga\Customer\Domain\ValueObject;
+namespace spec\Appliga\Customer\Domain\Model;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
 class EmailSpec extends ObjectBehavior
 {
-    const VALID_EMAIL_ADDRESS = 'brzoski.pawel@gazeta.pl';
+    const VALID_EMAIL_ADDRESS = 'brzoski.pawel@gmail.com';
 
     function let()
     {
@@ -16,7 +16,7 @@ class EmailSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('Appliga\Customer\Domain\ValueObject\Email');
+        $this->shouldHaveType('Appliga\Customer\Domain\Model\Email');
     }
 
     function it_should_throw_exception_when_given_email_address_is_empty()

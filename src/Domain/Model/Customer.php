@@ -1,7 +1,5 @@
 <?php
-namespace Appliga\Customer\Domain\Entity;
-
-use Appliga\Customer\Domain\ValueObject\Email;
+namespace Appliga\Customer\Domain\Model;
 
 class Customer
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Appliga\Customer\Domain\ValueObject;
+namespace Appliga\Customer\Domain\Model;
 
 class Email
 {
