@@ -13,6 +13,7 @@ class SignUp
         $this->id = uniqid();
         $this->name = $name;
         $this->email = $email;
+        $this->password = $password;
     }
 
     /**
