@@ -1,7 +1,7 @@
 <?php
 namespace Appliga\Customer\Domain\Repository;
 
-use Appliga\Customer\Domain\Entity\Customer;
+use Appliga\Customer\Domain\Model\Customer;
 
 interface CustomerRepository
 {
