@@ -24,22 +24,22 @@ class CustomerSpec extends ObjectBehavior
 
     function it_should_throw_exception_when_given_empty_name(Email $email)
     {
-        $this->shouldThrow('\InvalidArgumentException')->during('__construct', array(uniqid(),'',$email, self::VALID_PASSWORD));
+        $this->shouldThrow('InvalidArgumentException')->during('__construct', array(uniqid(),'',$email, self::VALID_PASSWORD));
     }
 
     function it_should_throw_exception_when_given_name_is_null(Email $email)
     {
-        $this->shouldThrow('\InvalidArgumentException')->during('__construct', array(uniqid(),null,$email, self::VALID_PASSWORD));
+        $this->shouldThrow('InvalidArgumentException')->during('__construct', array(uniqid(),null,$email, self::VALID_PASSWORD));
     }
 
     function it_should_throw_exception_when_given_empty_password(Email $email)
     {
-        $this->shouldThrow('\InvalidArgumentException')->during('__construct', array(uniqid(),self::VALID_NAME,$email, ''));
+        $this->shouldThrow('InvalidArgumentException')->during('__construct', array(uniqid(),self::VALID_NAME,$email, ''));
     }
 
     function it_should_throw_exception_when_given_password_is_null(Email $email)
     {
-        $this->shouldThrow('\InvalidArgumentException')->during('__construct', array(uniqid(),self::VALID_NAME,$email, null));
+        $this->shouldThrow('InvalidArgumentException')->during('__construct', array(uniqid(),self::VALID_NAME,$email, null));
     }
 
     function it_should_return_id_when_given_id()
